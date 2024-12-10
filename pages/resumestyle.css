@@ -1,0 +1,12 @@
+.templates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+.templates img{
+    border: 5px solid #134074;
+    width: 250px;
+    border-radius: 28px;
+}
