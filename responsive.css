@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1044px) {
+    .heroSection .heroS h1 {
+        width: 70%;
+    }
+    .heroSection .heroS p {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 996px) {
+    #fhidden{
+        display: none;
+    }
+    .processdiv {
+        margin: 2px 60px;
+    }
+    .process{
+        flex-wrap: wrap;
+    }
+    .headingss p {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .heroSection .heroS p {
+        width: 68%;
+    }
+     
+}
+@media only screen and (max-width: 848px) {
+    #fhidden2{
+        display: none;
+    }
+    .heroSection nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 100px;
+        align-items: center;
+        gap: 14px;
+        flex-direction: column;
+    }
+    .heroSection .heroS h1 {
+        width: 90%;
+    }
+    .headingss p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .advs {
+        flex-wrap: wrap;
+    }
+    .adv1 {
+        margin: 0px 48px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .heroSection .heroS h1 {
+        width: 92%;
+        font-size: 40px;
+    }
+    .heroSection .heroS span {
+        color: #0b2545;
+        font-size: 50px;
+    }
+    .headingss p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+@media only screen and (max-width: 572px) {
+    .heroSection .heroS h1 {
+        width: 95%;
+        font-size: 34px;
+    }
+    .headingss h1 {
+        font-size: 30px;
+    }
+    .heroSection .heroS span {
+        color: #0b2545;
+        font-size: 46px;
+    }
+    .heroSection .heroS p {
+        width: 82%;
+    }
+    .contactscontainer .contactsitems .contactsitem2 {
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .heroSection .heroS h1 {
+        width: 95%;
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    .headingss h1 {
+        font-size: 28px;
+    }
+    .heroSection .heroS span {
+        color: #0b2545;
+        font-size: 40px;
+    }
+    .heroSection .heroS p {
+        width: 84%;
+    }
+    
+}
+@media only screen and (max-width: 460px) {
+    footer .footerdiv2 {
+        display: none;
+    }
+    .headingss h1 {
+        font-size: 26px;
+    }
+    footer .footerdiv {
+        gap: 92px;
+    }
+    .heroSection nav .navnavs .navhr {
+       display: none;
+    }
+    .ul2navs{
+       display: none !important; 
+    } 
+    .heroSection .heroS h1 {
+        width: 95%;
+        font-size: 28px;
+    }
+    .heroSection .heroS span {
+        color: #0b2545;
+        font-size: 34px;
+    }
+    .adv1 h1 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 385px) {
+    .heroSection .heroS h1 {
+        width: 95%;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .headingss h1 {
+        font-size: 24px;
+    }
+    
+    .heroSection .heroS span {
+        color: #0b2545;
+        font-size: 30px;
+    }
+    .heroSection nav .navnavs ul {
+        display: flex;
+        gap: 14px;
+        font-size: 14px;
+    }
+}
