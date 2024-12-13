@@ -197,7 +197,7 @@ body{
   color: #0b2545;
 width: 60%;
  }
- .heroSection .heroS .btn{
+ .btn{
   padding: 18px 14px;
   margin-top: 8px;
   border: 1px solid #0b2545;
@@ -208,7 +208,7 @@ width: 60%;
   text-align: center;
   font-size: 13.33px ;
  }
- .heroSection .heroS .btn:hover{
+ .btn:hover{
   border: 1px solid #0b2545;
   background: #0b2545;
   color: #EEF4ED;

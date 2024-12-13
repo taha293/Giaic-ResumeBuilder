@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIAIC GenerateResume</title>
+  <link rel="stylesheet" href="/pages/generatedresume.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="resumestyle.css">
+  <link rel="stylesheet" href="/responsive.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/match-height.js"></script>
+  <script>
+    $(function () {
+      $('.match-height-bootstrap-row > * > *').matchHeight();
+      $('.match-height > *').matchHeight();
+    })
+  </script>
+</head>
+
+<body>
+  <!-- Hero Section  -->
+  <section class="heroSection">
+    <!-- Navbar in Hero Section  -->
+    <nav>
+      <div class="navlogo">
+        <img src="/assets/img/logo.png" alt="Logo">
+        <p>GIAIC Resume Builder</p>
+      </div>
+      <div class="navnavs">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/resume.html">Templates</a></li>
+          <li><a href="/index.html#contactsectioni">Contact</a></li>
+        </ul>
+        <div class="navhr"></div>
+        <ul class="ul2navs">
+          <li><a href="https://www.linkedin.com/in/muhammad-taha-ansarii/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-lg" style="color: #0b2545;"></i></a></li>
+          <li><a href="https://github.com/taha293" target="_blank"><i class="fa-brands fa-github fa-lg"
+                style="color: #0b2545;"></i></a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <section class="resumeform" id="resumeForm">
+      <h3>1. Personal Information :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="name">Name :</label>
+          <div class="rq">
+            <input type="text" id="name" placeholder="Enter your Name">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="fname">Father Name :</label>
+          <div class="rq">
+            <input type="text" id="fname" placeholder="Enter your Father Name">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="phno">Phone No. :</label>
+          <div class="rq">
+            <input type="number" id="phno" placeholder="Enter your Number">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="nicno">CNIC No :</label>
+          <div class="rq">
+            <input type="number" id="nicno" placeholder="Enter your Cnic No">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="nation">Nationality :</label>
+          <div class="rq">
+            <input type="text" id="nation" placeholder="ie Pakistani, American">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="religion">Religion :</label>
+          <div class="rq">
+            <input type="text" id="religion" placeholder="ie Islam">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="mstatus">Martial Status :</label>
+          <div class="rq">
+            <input type="text" id="mstatus" placeholder="ie Single, Married">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="dob">Date of Birth :</label>
+          <div class="rq">
+            <input type="date" id="dob" placeholder="">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="address">Address :</label>
+          <div class="rq">
+            <input type="text" id="address" placeholder="Enter your Address">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="mail">Email :</label>
+          <div class="rq">
+            <input type="email" id="mail" placeholder="Enter your Email">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+
+      </div>
+      <h3>2. Education :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="ed1">Education 1 :</label>
+          <div class="rq">
+            <input type="text" id="ed1" placeholder="ie Matriculation">
+            <p class="requiredwarn">This field is required</p>
+            <input type="text" id="ed1from" placeholder="From ie Board of ...">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="ed2">Education 2 :</label>
+          <div class="rq">
+            <input type="text" id="ed2" placeholder="ie Matriculation">
+            <p class="requiredwarn">This field is required</p>
+            <input type="text" id="ed2from" placeholder="From ie Board of ...">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <h3>3. Experience :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="job1">Experience 1 :</label>
+          <div class="rq">
+            <input type="text" id="job1" placeholder="Designation ie Employee">
+            <p class="requiredwarn">This field is required</p>
+            <input type="text" id="job1where" placeholder="Where ie GIAIC company ">
+            <p class="requiredwarn">This field is required</p>
+            <input type="number" id="job1date" placeholder="from ie 2022-2024">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="job2">Experience 2 :</label>
+          <div class="rq">
+            <input type="text" id="job2" placeholder="Designation ie Employee">
+            <p class="requiredwarn">This field is required</p>
+            <input type="text" id="job2where" placeholder="Where ie GIAIC company ">
+            <p class="requiredwarn">This field is required</p>
+            <input type="number" id="job2date" placeholder="from ie 2022-2024">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="job3">Experience 3 :(optional)</label>
+          <div class="rq">
+            <input type="text" id="job3" placeholder="Designation ie Employee">
+
+            <input type="text" id="job3where" placeholder="Where ie GIAIC company ">
+
+            <input type="number" id="job3date" placeholder="from ie 2022-2024">
+
+          </div>
+        </div>
+      </div>
+      <h3>4. Skills :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="skill1">Skill 1:</label>
+          <div class="rq">
+            <input type="text" id="skill1" placeholder="Skill ie Ms Word">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="skill1range" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="skill2">Skill 2:</label>
+          <div class="rq">
+            <input type="text" id="skill2" placeholder="Skill ie Ms Word">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="skill2range" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="skill3">Skill 3:</label>
+          <div class="rq">
+            <input type="text" id="skill3" placeholder="Skill ie Ms Word">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="skill3range" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="skill4">Skill 4:</label>
+          <div class="rq">
+            <input type="text" id="skill4" placeholder="Skill ie Ms Word">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="skill4range" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="skill5">Skill 5:</label>
+          <div class="rq">
+            <input type="text" id="skill5" placeholder="Skill ie Ms Word">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="skill5range" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <h3>5. Language :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="lang1">Language 1:</label>
+          <div class="rq">
+            <input type="text" id="lang1" placeholder="ie English">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="lang2">Language 2:</label>
+          <div class="rq">
+            <input type="text" id="lang2" placeholder="ie Urdu">
+            <p class="requiredwarn">This field is required</p>
+            <input type="range" min="1" max="100" value="50" id="" placeholder=" ">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <h3>6. Hobbies :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="hb1">Hobby 1:</label>
+          <div class="rq">
+            <input type="text" id="hb1" placeholder="ie Traveling">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+        <div class="inputt">
+          <label for="hb2">Hobby 2:</label>
+          <div class="rq">
+            <input type="text" id="hb2" placeholder="ie Traveling">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <h3>7. Picture (Optional) :</h3>
+      <div class="pinfoform">
+        <div class="inputt">
+          <label for="picimg">Select Image</label>
+          <div class="rq">
+            <input type="file" id="picimg" accept="image/*">
+            <p class="requiredwarn">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <div class="submitbtn">
+        <a id="generatebtn" class="btn" style="padding: 12px; font-size: 12px; cursor: pointer;">Generate Resume</a>
+        <p class="rqfields" style="display: none;">Please fill all the required fields</p>
+      </div>
+    </section>
+    <section class="genres" id="resumeGen">
+      <div class="generated">
+        <div class="generatedresume boddy">
+          <div style="padding: 0px 70px; background-color: white;" id="resDiv">
+            <div class="l-constrained group">
+              <div class="design">
+                <div class="col-2">
+                  <div class="name">
+                    <p class="text">Muhammad Taha</p>
+                    <p class="text-2">professional cv</p>
+                  </div>
+                  <div class="bg-2" ></div>
+                </div>
+                <div class="contact">
+                  <div class="heading group">
+                    <div class="bg-holder">
+                      <img class="icon" src="images/icon_8.png" alt="" width="43" height="51">
+                    </div>
+                    <img class="text-3" src="images/contact_me.png" alt="Contact Me" width="443" height="52"
+                      title="Contact Me">
+                  </div>
+                  <div class="phone group">
+                    <img class="phone-2" src="images/phone.png" alt="" width="25" height="41">
+                    <p>+923123456789</p>
+                  </div>
+                  <div class="web group">
+                    <img class="web-2" src="images/web.png" alt="" width="40" height="41">
+                    <p>tahahero7890@gmail.com</p>
+                  </div>
+                  <div class="location group">
+                    <img class="location-2" src="images/location.png" alt="" width="27" height="40">
+                    <p>Plot123, area2c, Abcde Karachi.</p>
+                  </div>
+                </div>
+                <div class="col group">
+                  <div class="education">
+                    <div class="heading-2 group">
+                      <div class="bg-holder-2">
+                        <img class="icon-2" src="images/icon_7.png" alt="" width="64" height="38">
+                      </div>
+                      <img class="education-2" src="images/education.png" alt="Education" width="397" height="52"
+                        title="Education">
+                    </div>
+                    <div class="degree-01 group">
+                      <p class="matriculation">Matriculation</p>
+                      <p class="text-7">from “Board of secondary</p>
+                      <p class="text-8">EDUCATION KARACHI”</p>
+                    </div>
+                    <div class="degree-02">
+                      <p class="intermediate">Intermediate</p>
+                      <p class="text-9">From “Board of intermediate</p>
+                      <p class="text-10">EDUCATION KARACHI”</p>
+                    </div>
+                  </div>
+                  <div class="references">
+                    <div class="heading-3 group">
+                      <div class="bg-holder-3">
+                        <img class="icon-3" src="images/icon_6.png" alt="" width="67" height="47">
+                      </div>
+                      <p class="objective">Objective</p>
+                    </div>
+                    <div class="person-01">
+                      To acheive a challenging and successful enviroment to use my all experience, skills and knowledge
+                      to
+                      seek my future expectations and I am very hopeful that I will do it because
+                      <br>I am interested in it also. So please give ne a chance acording to my knowledge, experience
+                      and
+                      qualification.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="about">
+                  <div class="heading-4 group">
+                    <div class="bg-holder-4">
+                      <img class="icon-4" src="images/icon_5.png" alt="" width="47" height="55">
+                    </div>
+                    <img class="text-12" src="images/about_me.png" alt="About me" width="359" height="52"
+                      title="About me">
+                  </div>
+                  <p class="text-13">Father Name &nbsp;&nbsp;: &nbsp;&nbsp;Muhammad Qasim<br>Date of Birth
+                    &nbsp;&nbsp;&nbsp;:
+                    &nbsp;&nbsp;11-05-2005<br>CNIC No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    &nbsp;&nbsp;42123-1234567-1<br>Nationality &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    &nbsp;&nbsp;Pakistani<br>Religion
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    &nbsp;&nbsp;Islam<br>Status
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    &nbsp;&nbsp;Single
+                  </p>
+                </div>
+                <div class="job-experience">
+                  <div class="heading-5 group">
+                    <div class="bg-holder-5">
+                      <img class="icon-5" src="images/icon_4.png" alt="" width="50" height="45">
+                    </div>
+                    <img class="text-14" src="images/job_experience.png" alt="Job Experience" width="577" height="52"
+                      title="Job Experience">
+                  </div>
+                  <div class="job-02 group">
+                    <div class="row-6 group">
+                      <p class="text-15">CIT &nbsp;teacher</p>
+                      <p class="text-16">2022 -2023</p>
+                    </div>
+                    <p class="text-17">Hi-Tech Computer Academy</p>
+                  </div>
+                  <div class="job-01 group">
+                    <div class="col-6">
+                      <p class="cashior">Cashior</p>
+                      <p class="workshop">Workshop</p>
+                    </div>
+                    <p class="text-18">2021 - 2022</p>
+                  </div>
+                  <div class="job-01 group" id="optjob">
+                    <div class="col-6">
+                      <p class="cashior">Cashior</p>
+                      <p class="workshop">Workshop</p>
+                    </div>
+                    <p class="text-18">2021 - 2022</p>
+                  </div>
+                </div>
+                <div class="skills group">
+                  <div class="heading-6 group">
+                    <div class="bg-holder-6">
+                      <img class="icon-6" src="images/icon_3.png" alt="" width="54" height="50">
+                    </div>
+                    <img class="skills-2" src="images/skills.png" alt="Skills" width="234" height="52" title="Skills">
+                  </div>
+                  <div class="row-8 match-height group">
+                    <div class="adobe-photoshop group">
+                      <p class="text-19">Adobe Photoshop</p>
+                      <div class="shape-02-holder">
+                        <div class="shape-01"></div>
+                      </div>
+                    </div>
+                    <div class="adobe-illustrator group">
+                      <p class="text-20">Adobe Illustrator</p>
+                      <div class="shape-02-holder-2">
+                        <div class="shape-01-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row match-height group">
+                    <div class="microsoft-word group">
+                      <p class="text-21">MS Office</p>
+                      <div class="shape-02-holder-3">
+                        <div class="shape-01-3"></div>
+                      </div>
+                    </div>
+                    <div class="microsoft-powerpoint group">
+                      <p class="html5">HTML5</p>
+                      <div class="shape-02-holder-4">
+                        <div class="shape-01-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="html-s-css-3 group">
+                    <p class="text-22">CSS-3</p>
+                    <div class="shape-02-holder-5">
+                      <div class="shape-01-5"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="heading-7 group">
+                  <div class="bg-holder-7">
+                    <img class="icon-7" src="images/icon_2.png" alt="" width="50" height="50">
+                  </div>
+                  <img class="language" src="images/language.png" alt="Language" width="374" height="52"
+                    title="Language">
+                </div>
+                <div class="row-4 group">
+                  <div class="shape"></div>
+                  <p class="english">English</p>
+                  <div class="shape-02-holder-6">
+                    <img class="shape-01-6" src="images/shape-01.png" alt="" width="115" height="15">
+                  </div>
+                </div>
+                <div class="row-5 group">
+                  <div class="shape-2"></div>
+                  <p class="urdu">Urdu</p>
+                  <div class="shape-02-holder-7">
+                    <img class="shape-01-7" src="images/shape-01_2.png" alt="" width="200" height="15">
+                  </div>
+                </div>
+                <div class="hobbies group">
+                  <div class="heading-8 group">
+                    <div class="bg-holder-8">
+                      <img class="icon-8" src="images/icon.png" alt="" width="50" height="51">
+                    </div>
+                    <img class="hobbies-2" src="images/hobbies.png" alt="Hobbies" width="302" height="52"
+                      title="Hobbies">
+                  </div>
+                  <div class="row-2 group">
+                    <div class="shape-3"></div>
+                    <p class="programming">Programming</p>
+                  </div>
+                  <div class="row-3 group">
+                    <div class="shape-4"></div>
+                    <img class="traveling" src="images/traveling.png" alt="Traveling" width="220" height="30"
+                      title="Traveling">
+                  </div>
+                </div>
+                <div class="hobbies-copy group">
+                  <div class="heading-9 group">
+                    <div class="bg-holder-9">
+                      <div class="bg-3"></div>
+                    </div>
+                    <p class="refference">Refference</p>
+                  </div>
+                  <div class="row-7 group">
+                    <div class="shape-5"></div>
+                    <p class="text-23">Will be provided as demand.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+            <script>
+
+              async function saveDivToPDF(divId) {
+                const { jsPDF } = window.jspdf;
+
+                const element = document.getElementById(divId);
+                if (!element) {
+                  console.error('Element not found!');
+                  return;
+                }
+
+                // Get the computed styles of the original element
+                const computedStyles = window.getComputedStyle(element);
+
+                // Save current transform styles
+                const originalTransform = element.style.transform;
+                const originalTransformOrigin = element.style.transformOrigin
+
+                // Temporarily remove the transform for PDF generation
+                element.style.transform = 'none';
+                element.style.transformOrigin = 'none'
+
+                try {
+                  // Use html2canvas to render the div into a canvas
+                  const canvas = await html2canvas(element, {
+                    scale: 1.7, // Render with original scale (no zoom)
+                    useCORS: true, // To handle cross-origin resources
+                    backgroundColor: null, // Transparent background
+                    allowTaint: false, // Avoid tainting the canvas
+                  });
+
+                  // If the canvas has a blank background or is of no size, log error
+                  if (!canvas.width || !canvas.height) {
+                    console.error('Canvas is blank! Check the element and styles.');
+                    return;
+                  }
+
+                  // Convert canvas to image data
+                  const imgData = canvas.toDataURL('image/jpeg', 0.7); // Adjust quality (0.1 to 1.0)
+
+                  // Create PDF from the canvas image
+                  const pdf = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'px',
+                    format: [canvas.width, canvas.height],
+                  });
+
+                  // Add the image to PDF
+                  pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width, canvas.height);
+
+                  // Save the PDF
+                  pdf.save(`${divId}.pdf`);
+                } catch (error) {
+                  console.error('Error generating PDF:', error);
+                } finally {
+                  // Restore the original transform styles
+                  element.style.transform = originalTransform;
+                  element.style.transformOrigin = originalTransformOrigin
+                }
+              }
+
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <div class="genbtn">
+        <a id="editbtn" class="btn" style="padding: 12px; font-size: 12px; cursor: pointer;">Edit Resume</a>
+        <a onclick="saveDivToPDF('resDiv')" class="btn"
+          style="padding: 12px; font-size: 12px; cursor: pointer;">Download Resume</a>
+      </div>
+    </section>
+    <!-- Footer  -->
+    <footer>
+      <div class="footerdiv">
+        <div class="footerlogo">
+          <img src="/assets/img/logo-2.png" alt="" height="50px">
+          <h3>GIAIC Resume Builder</h3>
+        </div>
+        <div class="ficons">
+          <p style="font-size: 20px; margin-bottom: 16px;">Follow US on</p>
+          <ul>
+            <li><a href="https://github.com/taha293"><i class="fa-brands fa-github fa-lg"
+                  style="color:#EEF4ED "></i></a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-taha-ansarii/"><i class="fa-brands fa-linkedin fa-lg"
+                  style="color:#EEF4ED "></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook fa-lg" style="color:#EEF4ED "></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-lg" style="color:#EEF4ED "></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerdiv2">
+        <p style="font-weight: 600;">Build Your resume</p>
+        <a href="#">Basic Resume Examples</a>
+        <a href="#">How To Write a Resume</a>
+        <a href="#">Resume Builder App</a>
+        <a href="#r">Cover Letter Builder</a>
+        <a href="#">Resume Examples</a>
+        <a href="#">Resume Templates</a>
+
+      </div>
+      <div class="footerdiv2" id="fhidden2">
+        <p style="font-weight: 600;">Career Resources</p>
+        <a href="#">Cover Letter Examples</a>
+        <a href="#">How To Write a Cover Letter</a>
+        <a href="#">Job Search Resource Center</a>
+        <a href="#">Thank You Note Examples</a>
+
+
+      </div>
+      <div class="footerdiv2" id="fhidden">
+        <p style="font-weight: 600;">About GIAIC</p>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Press</a>
+
+      </div>
+    </footer>
+  </section>
+  <script src="/pages/js/script.js"></script>
+</body>
+
+</html>

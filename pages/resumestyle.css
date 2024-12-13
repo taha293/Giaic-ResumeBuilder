@@ -1,12 +1,166 @@
+/* Templates page  */
 .templates{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 20px;
+    gap: 6px;
 }
 .templates img{
     border: 5px solid #134074;
     width: 250px;
     border-radius: 28px;
+}
+.templates p{
+    color: #134074;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.templates span{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Resume page  */
+.resumeform{
+    padding: 26px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.resumeform .pinfoform{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.inputt{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.resumeform input{
+    padding: 8px;
+    outline: none;
+    border-radius: 6px;
+    width: 260px;
+    border: 2px solid #0b2545;
+    background-color: #eef4ed;
+    color: #0b2545;
+}
+.resumeform input::placeholder{
+    color: #13315c;
+    font-size: 11px;
+}
+.resumeform label{
+    margin-right:4px;
+    font-size: 14px;
+}
+.rq{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-direction: column;
+}
+.rq .requiredwarn{
+    display: none;
+    justify-content: center;
+    font-size: 12px;
+    margin: 4px 0px;
+    color: rgb(216, 46, 46);
+}
+.submitbtn{
+    margin: 5px 0px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: rgb(199, 27, 27);
+    font-style: italic;
+    font-size: 12px;
+
+}
+/* Genarted RESUME SECTION  */
+
+/* .genres{
+    display: none;
+} */
+.generated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.generated .generatedresume{
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #eef4ed;
+    height: 1050px;
+}
+#resDiv{
+    transform: scale(0.3);
+    transform-origin: top;
+    height: 3579px;
+}
+.genbtn{
+    margin-top: 18px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+@media only Screen and (max-width : 850px ){
+    .generated .generatedresume{
+        height: 898px;
+    }
+    #resDiv{
+        transform: scale(0.25);
+    }
+}
+@media only Screen and (max-width : 670px ){
+    .generated .generatedresume{
+        height: 718px;
+    }
+    #resDiv{
+        transform: scale(0.2);
+    }
+}
+@media only Screen and (max-width : 510px ){
+    .generated .generatedresume{
+        height: 645px;
+    }
+    #resDiv{
+        transform: scale(0.18);
+    }
+}
+@media only Screen and (max-width : 450px ){
+    .generated .generatedresume{
+        height: 538px;
+    }
+    #resDiv{
+        transform: scale(0.15);
+    }
+    .genbtn{
+        flex-direction: column;
+    }
+}
+@media only Screen and (max-width : 375px ){
+    .generated .generatedresume{
+        height: 538px;
+    }
+    #resDiv{
+        transform: scale(0.142);
+    }
 }
