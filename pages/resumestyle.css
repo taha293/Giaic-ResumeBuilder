@@ -90,9 +90,9 @@
 }
 /* Genarted RESUME SECTION  */
 
-/* .genres{
+.genres{
     display: none;
-} */
+}
 .generated{
     display: flex;
     justify-content: center;
@@ -163,4 +163,13 @@
     #resDiv{
         transform: scale(0.142);
     }
+}
+
+/* inner resume  */
+
+.range{
+    right: auto !important;
+    margin: 0 !important;
+    width: 50% ;
+    border-radius: 7.5px !important;
 }

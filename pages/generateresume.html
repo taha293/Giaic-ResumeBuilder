@@ -71,14 +71,14 @@
         <div class="inputt">
           <label for="phno">Phone No. :</label>
           <div class="rq">
-            <input type="number" id="phno" placeholder="Enter your Number">
+            <input type="text" id="phno" placeholder="Enter your Number">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
         <div class="inputt">
           <label for="nicno">CNIC No :</label>
           <div class="rq">
-            <input type="number" id="nicno" placeholder="Enter your Cnic No">
+            <input type="text" id="nicno" placeholder="Enter your Cnic No">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
@@ -156,7 +156,7 @@
             <p class="requiredwarn">This field is required</p>
             <input type="text" id="job1where" placeholder="Where ie GIAIC company ">
             <p class="requiredwarn">This field is required</p>
-            <input type="number" id="job1date" placeholder="from ie 2022-2024">
+            <input type="text" id="job1date" placeholder="from ie 2022-2024">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
@@ -167,7 +167,7 @@
             <p class="requiredwarn">This field is required</p>
             <input type="text" id="job2where" placeholder="Where ie GIAIC company ">
             <p class="requiredwarn">This field is required</p>
-            <input type="number" id="job2date" placeholder="from ie 2022-2024">
+            <input type="text" id="job2date" placeholder="from ie 2022-2024">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
@@ -178,7 +178,7 @@
 
             <input type="text" id="job3where" placeholder="Where ie GIAIC company ">
 
-            <input type="number" id="job3date" placeholder="from ie 2022-2024">
+            <input type="text" id="job3date" placeholder="from ie 2022-2024">
 
           </div>
         </div>
@@ -238,7 +238,7 @@
           <div class="rq">
             <input type="text" id="lang1" placeholder="ie English">
             <p class="requiredwarn">This field is required</p>
-            <input type="range" min="1" max="100" value="50" id="" placeholder=" ">
+            <input type="range" min="1" max="100" value="50" id="lang1range" placeholder=" ">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
@@ -247,7 +247,7 @@
           <div class="rq">
             <input type="text" id="lang2" placeholder="ie Urdu">
             <p class="requiredwarn">This field is required</p>
-            <input type="range" min="1" max="100" value="50" id="" placeholder=" ">
+            <input type="range" min="1" max="100" value="50" id="lang2range" placeholder=" ">
             <p class="requiredwarn">This field is required</p>
           </div>
         </div>
@@ -281,7 +281,7 @@
       </div>
       <div class="submitbtn">
         <a id="generatebtn" class="btn" style="padding: 12px; font-size: 12px; cursor: pointer;">Generate Resume</a>
-        <p class="rqfields" style="display: none;">Please fill all the required fields</p>
+        <p class="rqfields" id="reqdiv" style="display: NONE;">Please fill all the required fields</p>
       </div>
     </section>
     <section class="genres" id="resumeGen">
@@ -292,10 +292,10 @@
               <div class="design">
                 <div class="col-2">
                   <div class="name">
-                    <p class="text">Muhammad Taha</p>
+                    <p class="text" id="GRNAME">Muhammad Taha</p>
                     <p class="text-2">professional cv</p>
                   </div>
-                  <div class="bg-2" ></div>
+                  <div class="bg-2" id="GRPICIMG"></div>
                 </div>
                 <div class="contact">
                   <div class="heading group">
@@ -307,15 +307,15 @@
                   </div>
                   <div class="phone group">
                     <img class="phone-2" src="images/phone.png" alt="" width="25" height="41">
-                    <p>+923123456789</p>
+                    <p id="GRPHNO">+923123456789</p>
                   </div>
                   <div class="web group">
                     <img class="web-2" src="images/web.png" alt="" width="40" height="41">
-                    <p>tahahero7890@gmail.com</p>
+                    <p id="GRMAIL">tahahero7890@gmail.com</p>
                   </div>
                   <div class="location group">
                     <img class="location-2" src="images/location.png" alt="" width="27" height="40">
-                    <p>Plot123, area2c, Abcde Karachi.</p>
+                    <p id="GRADDRESS">Plot123, area2c, Abcde Karachi.</p>
                   </div>
                 </div>
                 <div class="col group">
@@ -328,14 +328,16 @@
                         title="Education">
                     </div>
                     <div class="degree-01 group">
-                      <p class="matriculation">Matriculation</p>
-                      <p class="text-7">from “Board of secondary</p>
-                      <p class="text-8">EDUCATION KARACHI”</p>
+                      <p class="matriculation" id="GRED1">Matriculation</p>
+                      <p class="text-7" style="line-height: 1.5;" id="GRED1FROM">from “Board of secondary <BR>EDUCATION
+                        KARACHI”</BR></p>
+
                     </div>
                     <div class="degree-02">
-                      <p class="intermediate">Intermediate</p>
-                      <p class="text-9">From “Board of intermediate</p>
-                      <p class="text-10">EDUCATION KARACHI”</p>
+                      <p class="intermediate" id="GRED2">Intermediate</p>
+                      <p class="text-9" style="line-height: 1.5;" id="GRED2FROM">From “Board of intermediate
+                        <br>EDUCATION KARACHI”</p>
+
                     </div>
                   </div>
                   <div class="references">
@@ -365,7 +367,7 @@
                     <img class="text-12" src="images/about_me.png" alt="About me" width="359" height="52"
                       title="About me">
                   </div>
-                  <p class="text-13">Father Name &nbsp;&nbsp;: &nbsp;&nbsp;Muhammad Qasim<br>Date of Birth
+                  <p class="text-13" id="GRPINFO">Father Name &nbsp;&nbsp;: &nbsp;&nbsp;Muhammad Qasim<br>Date of Birth
                     &nbsp;&nbsp;&nbsp;:
                     &nbsp;&nbsp;11-05-2005<br>CNIC No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
                     &nbsp;&nbsp;42123-1234567-1<br>Nationality &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
@@ -386,24 +388,24 @@
                   </div>
                   <div class="job-02 group">
                     <div class="row-6 group">
-                      <p class="text-15">CIT &nbsp;teacher</p>
-                      <p class="text-16">2022 -2023</p>
+                      <p class="text-15" id="GRJOB1">CIT &nbsp;teacher</p>
+                      <p class="text-16" id="GRJOB1DATE">2022 -2023</p>
                     </div>
-                    <p class="text-17">Hi-Tech Computer Academy</p>
+                    <p class="text-17" id="GRJOB1WHERE">Hi-Tech Computer Academy</p>
                   </div>
-                  <div class="job-01 group">
-                    <div class="col-6">
-                      <p class="cashior">Cashior</p>
-                      <p class="workshop">Workshop</p>
+                  <div class="job-02 group">
+                    <div class="row-6 group">
+                      <p class="text-15" id="GRJOB2">CIT &nbsp;teacher</p>
+                      <p class="text-16" id="GRJOB2DATE">2022 -2023</p>
                     </div>
-                    <p class="text-18">2021 - 2022</p>
+                    <p class="text-17" id="GRJOB2WHERE">Hi-Tech Computer Academy</p>
                   </div>
-                  <div class="job-01 group" id="optjob">
-                    <div class="col-6">
-                      <p class="cashior">Cashior</p>
-                      <p class="workshop">Workshop</p>
+                  <div class="job-02 group" id="optjob">
+                    <div class="row-6 group">
+                      <p class="text-15" id="GRJOB3">CIT &nbsp;teacher</p>
+                      <p class="text-16" id="GRJOB3DATE">2022 -2023</p>
                     </div>
-                    <p class="text-18">2021 - 2022</p>
+                    <p class="text-17" id="GRJOB3WHERE">Hi-Tech Computer Academy</p>
                   </div>
                 </div>
                 <div class="skills group">
@@ -415,36 +417,36 @@
                   </div>
                   <div class="row-8 match-height group">
                     <div class="adobe-photoshop group">
-                      <p class="text-19">Adobe Photoshop</p>
+                      <p class="text-19" id="GRSKILL1">Adobe Photoshop</p>
                       <div class="shape-02-holder">
-                        <div class="shape-01"></div>
+                        <div class="shape-01 range" id="GRSKILLRANGE1"></div>
                       </div>
                     </div>
                     <div class="adobe-illustrator group">
-                      <p class="text-20">Adobe Illustrator</p>
+                      <p class="text-20" id="GRSKILL2">Adobe Illustrator</p>
                       <div class="shape-02-holder-2">
-                        <div class="shape-01-2"></div>
+                        <div class="shape-01-2 range" id="GRSKILLRANGE2"></div>
                       </div>
                     </div>
                   </div>
                   <div class="row match-height group">
                     <div class="microsoft-word group">
-                      <p class="text-21">MS Office</p>
+                      <p class="text-21" id="GRSKILL3">MS Office</p>
                       <div class="shape-02-holder-3">
-                        <div class="shape-01-3"></div>
+                        <div class="shape-01-3 range" id="GRSKILLRANGE3"></div>
                       </div>
                     </div>
                     <div class="microsoft-powerpoint group">
-                      <p class="html5">HTML5</p>
+                      <p class="html5" id="GRSKILL4">HTML5</p>
                       <div class="shape-02-holder-4">
-                        <div class="shape-01-4"></div>
+                        <div class="shape-01-4 range" id="GRSKILLRANGE4"></div>
                       </div>
                     </div>
                   </div>
                   <div class="html-s-css-3 group">
-                    <p class="text-22">CSS-3</p>
+                    <p class="text-22" id="GRSKILL5">CSS-3</p>
                     <div class="shape-02-holder-5">
-                      <div class="shape-01-5"></div>
+                      <div class="shape-01-5 range" id="GRSKILLRANGE5"></div>
                     </div>
                   </div>
                 </div>
@@ -457,16 +459,18 @@
                 </div>
                 <div class="row-4 group">
                   <div class="shape"></div>
-                  <p class="english">English</p>
+                  <p class="english" id="GRLANG1">English</p>
                   <div class="shape-02-holder-6">
-                    <img class="shape-01-6" src="images/shape-01.png" alt="" width="115" height="15">
+                    <img class="shape-01-6 range" id="GRLANG1RANGE" src="images/shape-01.png" alt="" width="115"
+                      height="15">
                   </div>
                 </div>
                 <div class="row-5 group">
                   <div class="shape-2"></div>
-                  <p class="urdu">Urdu</p>
+                  <p class="urdu" id="GRLANG2">Urdu</p>
                   <div class="shape-02-holder-7">
-                    <img class="shape-01-7" src="images/shape-01_2.png" alt="" width="200" height="15">
+                    <img class="shape-01-7 range" id="GRLANG2RANGE" src="images/shape-01_2.png" alt="" width="200"
+                      height="15">
                   </div>
                 </div>
                 <div class="hobbies group">
@@ -479,12 +483,11 @@
                   </div>
                   <div class="row-2 group">
                     <div class="shape-3"></div>
-                    <p class="programming">Programming</p>
+                    <p class="programming" id="GRHB1">Programming</p>
                   </div>
-                  <div class="row-3 group">
+                  <div class="row-3 group" style="display: flex;align-items: center;">
                     <div class="shape-4"></div>
-                    <img class="traveling" src="images/traveling.png" alt="Traveling" width="220" height="30"
-                      title="Traveling">
+                    <p class="programming" id="GRHB2">Traveling</p>
                   </div>
                 </div>
                 <div class="hobbies-copy group">
@@ -557,7 +560,7 @@
                   pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width, canvas.height);
 
                   // Save the PDF
-                  pdf.save(`${divId}.pdf`);
+                  pdf.save(`GIAICResume.pdf`);
                 } catch (error) {
                   console.error('Error generating PDF:', error);
                 } finally {
